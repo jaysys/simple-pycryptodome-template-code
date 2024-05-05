@@ -49,8 +49,8 @@ def encrypt_data(data, key, iv):
     cipher_text = cipher.encrypt(data)
     return cipher_text
 
-# 암호환 데이터 저장 
-if True:
+# 암호화한 데이터를 저장한다.  
+if True: # False로 바꾸고 읽기만 테스트 할 수 있게 if만 넣어놨음.
     name = input("이름을 입력하세요: ")
     ssn = input("주민등록번호를 입력하세요: ")
     encrypted_ssn = encrypt_data(ssn.encode(), key, iv)
